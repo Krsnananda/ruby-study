@@ -1,0 +1,15 @@
+<% # page.erb %>
+<html>
+  <head>
+    <title>My erb</title>
+  </head>
+  <body>
+    <h1>it is: <%= Time.now %></h1>
+    <p>
+    <% 10.times do %>
+    <%= print "<p>Eu gosto de Rails</p>" %>
+    <% end %> </p>
+  </body>
+</html>
+
+<% #Para rodar o erb e gerar o html: erb test.html  > page.html %>
