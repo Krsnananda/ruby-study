@@ -6,9 +6,9 @@ require 'open-uri'
 
 url = "http://ruby.bastardsbook.com/files/fundamentals/hamlet.txt"
 
-File.open("hamlet.txt", "w"){ |text| text.puts open(url).read}
+File.open("files_io/hamlet.txt", "w"){ |text| text.puts open(url).read}
 
-file = File.open("hamlet.txt", 'r')
+file = File.open("files_io/hamlet.txt", 'r')
 while !file.eof?
   line = file.readline
   puts line
